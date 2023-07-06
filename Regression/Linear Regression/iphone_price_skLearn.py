@@ -8,7 +8,7 @@ from sklearn.metrics import r2_score
 data = pd.read_csv('Datasets\\iphone_prices.csv')
 data = data.dropna()
 
-# When we are splitting data we need to pass a 2d array as sklearn expects a 2d array as input
+# Building training and testing data
 trainData = data[['Version']]
 testData = data[['Prices']]
 
