@@ -1,4 +1,4 @@
-# In this program we are going to build a linear model which predicts the Iphone price for a certain year
+# In this program we are going build a linear model which predicts the Iphone price for a certain year using OLS
 
 import pandas as pd
 import statsmodels.api as sm
