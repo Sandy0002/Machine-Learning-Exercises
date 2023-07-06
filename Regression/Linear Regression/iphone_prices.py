@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 # Loading data
 data = pd.read_csv('Datasets\\iphone_prices.csv')
-
+data = data.dropna()
 # Defining variables
 x = data['Version']
 y = data['Prices']
