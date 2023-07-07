@@ -10,7 +10,6 @@ import seaborn as sns
 
 # Loading data
 data = pd.read_csv('Datasets\\possum.csv')
-
 print(data.head())
 
 # Upon observation we find that case represents enumeration so we delete it
@@ -40,7 +39,6 @@ sns.countplot(x='Pop',data=data)
 sns.countplot(x='sex',data=data)
 plt.show()
 
-
 # Converting cateogorical data into numerical
 data1 = pd.get_dummies(data)
 
@@ -51,17 +49,8 @@ del data1['Pop_other'], data1['sex_f']
 correlation  = data1.corr()
 print(correlation)
 
-# Observations
-'''Site has -ve correlation with footlgth, earconch, chest,Pop_vic
-    age is isn't directly related to anything but handlength,skull weight, total length have some impact
-    handlength is impacted by age,skullwt, total length, tail, chest, belly
-
-    In the end we remove eye, sex
-    '''
-trainData = data1[['site', 'hdlngth', 'skullw', 'totlngth', 'taill', 'footlgth',
-       'earconch', 'eye', 'chest', 'belly', 'Pop_Vic',]]
+trainData = data1[['site', 'hdlngth', 'skullw', 'totlngth', 'taill', 'footlgth','earconch', 'eye', 'chest', 'belly', 'Pop_Vic',]]
 testData = data1['age']
-
 
 # Train test split
 xTrain,xTest,yTrain,yTest = train_test_split(trainData,testData,test_size=0.2)
