@@ -38,17 +38,6 @@ features = sm.add_constant(features)
 # Model creation
 model = sm.Logit(target,features).fit()
 
-'''
-Here
-coef : the coefficients of the independent variables in the regression equation.
-
-Log-Likelihood : the natural logarithm of the Maximum Likelihood Estimation(MLE) function. MLE is the optimization process of finding the set of parameters that result in the best fit.
-
-LL-Null : the value of log-likelihood of the model when no independent variable is included(only an intercept is included).
-
-Pseudo R-squ. : a substitute for the R-squared value in Least Squares linear regression. It is the ratio of the log-likelihood of the null model to that of the full model.
-'''
-
 # Model predictions
 targetPred = model.predict(features)
 
