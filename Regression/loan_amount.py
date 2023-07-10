@@ -121,6 +121,10 @@ target = data['LoanAmount']
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=42)
 
+# Feature Scaling
+scaler = StandardScaler()
+xTrainScaled = scaler.fit_transform(X_train)
+xTestScaled = scaler.transform(X_test)
 # Model creation
 knn_regressor = KNeighborsRegressor()
 
@@ -131,14 +135,14 @@ param_grid = {'n_neighbors': range(2,8),
 
 # Perform grid search with cross-validation
 grid_search = GridSearchCV(knn_regressor, param_grid, cv=10, scoring='neg_mean_squared_error')
-grid_search.fit(X_train, y_train)
+grid_search.fit(xTrainScaled, y_train)
 
 # Get the best hyperparameters and best estimator
 best_params = grid_search.best_params_
 best_estimator = grid_search.best_estimator_
 
 # Evaluate the best estimator on the test set
-y_pred = best_estimator.predict(X_test)
+y_pred = best_estimator.predict(xTestScaled)
 mse = mean_squared_error(y_test, y_pred)
 
 print("Best Parameters:", best_params)
@@ -147,9 +151,9 @@ print("Mean Squared Error:", mse)
 
 # Using best estimators
 model = KNeighborsRegressor(n_neighbors=7,p=1,weights='uniform')
-model.fit(X_train,y_train)
+model.fit(xTrainScaled,y_train)
 
-yPred = model.predict(X_test)
+yPred = model.predict(xTestScaled)
 
 # Model evaluation
 print(r2_score(y_test,yPred))
