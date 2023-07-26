@@ -11,6 +11,7 @@ Repository consists of programs that demonstrate supervised and unsupervised lea
 + [Learning Types](#learning)
 + [Libraries Used](#library)
 + [Programs Description](#program)
++ [LICENSE](LICENSE)
 
 
 <a id="intro"></a><h2>About</h2>
@@ -93,3 +94,6 @@ Since there are lot of programs so the datasets are used and tasks carried out u
 **Titanic Dataset** | This dataset consists of 1912 famous tragedy the sinkage of Titanic data such as passenger id, class of the ticket, gender, survival status etc. Program for survival status is present in the repository.
 **Tobacco Dataset** | This is dataset consists of information about the age of beginning of tobacco,bidi and cigratte of the children across various states of India. Tasks to estimate the average age of starting of tobacco and bidi have been carried out.
 **Wine Quality** | This dataset contains data about red wine such as acidity,sugar content,chlorides, density,pH,quality etc. Programs for estimating the acidity and quality of the wine is present in the repository.
+
+## LICENSE
+[MIT LICENSE](LICENSE)
