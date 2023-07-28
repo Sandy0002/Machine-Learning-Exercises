@@ -9,6 +9,7 @@ Repository consists of programs that demonstrate supervised and unsupervised lea
 + [Terms](#terms)
 + [Tasks](#task)
 + [Learning Types](#learning)
++ [Steps Involved](#steps)
 + [Libraries Used](#library)
 + [Programs Description](#program)
 + [LICENSE](LICENSE)
@@ -68,6 +69,23 @@ To get started with the deep learning we need to have knowledege about several t
 **Unsupervised Learning** | A type of machine learning where the model is trained on unlabeled data and learns patterns and structures from the data without explicit output labels.
 **Semi-Supervised Learning** | A combination of supervised and unsupervised learning, where the model is trained on a combination of labeled and unlabeled data.
 **Reinforcement Learning** | A type of machine learning where an agent learns to make decisions by interacting with an environment and receiving feedback in the form of rewards or penalties.
+
+<a id="steps"></a><h2> Steps Involved</h2>
+| Step        | Task       
+| ------------- |:-------------:|
+**Data Collection** | The first step is to gather relevant data for the problem you want to solve. Data can come from various sources, such as databases, APIs, or manual data entry.
+**Data Preprocessing** | Once you have collected the data, it needs to be cleaned and prepared for analysis. This step involves handling missing values, dealing with outliers, and converting data into a suitable format for machine learning algorithms.
+**Feature Engineering** | Feature engineering is the process of selecting, transforming, or creating new features from the existing data to improve the performance of machine learning models.
+**Data Splitting** |  Before training a machine learning model, the dataset is divided into training and testing sets. The training set is used to train the model, while the testing set is used to evaluate its performance on unseen data.
+**Model Selection** | Depending on the problem type (e.g., classification or regression) and data characteristics, you choose an appropriate machine learning algorithm to train the model.
+**Model Training** | During this step, the selected machine learning algorithm is applied to the training data to learn patterns and relationships in the data.
+**Model Evaluation** | After training the model, it is evaluated on the testing data to assess its performance. Various metrics, such as accuracy, precision, recall, and mean squared error, are used to evaluate the model's performance.
+**Hyperparameter Tuning** | Many machine learning algorithms have hyperparameters that control the learning process. Hyperparameter tuning involves searching for the best combination of hyperparameters to optimize the model's performance.
+**Model Deployment** | Once you have a trained and tuned model, it can be deployed to make predictions on new, unseen data.
+**Model Monitoring and Maintenance** | Machine learning models may require periodic monitoring and maintenance to ensure they continue to perform well as new data becomes available.
+**Interpretation and Visualization** | Understanding how the model makes predictions is essential for building trust and gaining insights from the model's results. Interpretation and visualization techniques help explain the model's behavior and decision-making process.
+**Iteration and Improvement** | Machine learning is an iterative process. After deploying the model, you may receive new data and feedback, leading to further improvements and updates to the model.
+
 
 <a id="library"></a><h2> Libraries Used</h2>
 
