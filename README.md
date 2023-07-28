@@ -11,7 +11,7 @@ Repository consists of programs that demonstrate supervised and unsupervised lea
 + [Learning Types](#learning)
 + [Steps Involved](#steps)
 + [Libraries Used](#library)
-+ [Programs Description](#program)
++ [Datasets Description](#program)
 + [LICENSE](LICENSE)
 
 
