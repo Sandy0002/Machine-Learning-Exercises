@@ -45,8 +45,10 @@ To get started with the deep learning we need to have knowledege about several t
 **Underfitting** | A situation where a machine learning model fails to capture the underlying patterns in the data.
 **Gradient Descent** | An optimization algorithm used to update the model's parameters and minimize the loss function.
 **Ensemble Learning** | A method that combines multiple models to improve prediction accuracy and generalization.
-**Bias** | Difference between the actual value and the value predicted by the model
+**Bias** | Difference between the actual value and the value predicted by the model.
 **Variance** | The amount by which the prediction changes upon changing the training set.
+**Precision** | It is a value given by ratio of true positives to predicted positives.
+**Recall** | It is a value given by ratio of true positives to actual positives.
 
 
 <a id="task"></a><h2>Tasks</h2>
